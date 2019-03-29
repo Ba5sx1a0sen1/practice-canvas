@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>canvas</title>
+  <style>
+    #canvas {
+      border: 1px solid #ccc;
+      /* margin-left: 100px; */
+    }
+    .wrapper {
+      text-align: center;
+    }
+    .btn {
+      text-align: center;
+      margin: 16px;
+    }
+    .dragArea {
+      background-color: orange;
+      margin: auto;
+      width: 300px;
+      height: 300px;
+      cursor:all-scroll;
+    }
+    .dropArea {
+      background-color:orangered;
+      margin: auto;
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <canvas id="canvas">
+      your browser is not support Canvas!
+    </canvas>
+  </div>
+  <div class="btn">
+    <label for="image">
+      上传图片
+      <input type="file" name="image" id="upload">
+    </label>
+  </div>
+
+  <div style="position:relative;">
+    <canvas width="500" id="can" >
+      asdf
+    </canvas>
+    <!-- <span style="position:absolute;">我是文本</span> -->
+  </div>
+  <!-- <div class="dragArea" draggable="true">
+    asdasd
+  </div>
+  <div class="dropArea"> -->
+    
+  </div>
+  <!-- <button id="clear">清除画板</button> -->
+  <script src="./drag.js"></script>
+  <script src="./canvas.js"></script>
+</body>
+</html>
